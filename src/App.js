@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import SearchWorkspace from './components/SearchWorkspace'
+import PageNotFound from './components/PageNotFound'
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <HashRouter>
+    //   <Switch>
+    //   <Route
+    //   exact 
+    //   path='/'
+    //   component = {SearchWorkspace}
+    //   />
+    //   <Route 
+    //   path='/search'
+    //   component = {SearchWorkspace}
+    //   />
+    //   <Route path={"*"} component={PageNotFound} />
+    //   </Switch>
+    // </HashRouter>
+    <div>
+      <SearchWorkspace/>
     </div>
   );
 }
